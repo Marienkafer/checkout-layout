@@ -50,7 +50,10 @@ body {
 
 .header-line {
   margin-top: 15px;
+<<<<<<< HEAD
 	margin-bottom: 20px;
+=======
+>>>>>>> 7493da0... html fixed and first style construction adding fonts
   border: 1px solid #EDEDED;
   width: 80%;
   margin-left: auto;
