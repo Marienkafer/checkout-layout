@@ -1,0 +1,96 @@
+@font-face{
+	font-family: 'ProximaNova';
+   font-weight: normal;
+	font-style: normal;
+	src: url('/fonts/ProximaNova/ProximaNova-Regular.otf') format ('opentype');
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	margin-bottom: 25px;
+}
+
+body {
+	background-color: #F4F4F4;
+	font-family: 'ProximaNova', serif;
+}
+
+.main-block {
+	box-sizing: border-box;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: white;
+	
+	h1{
+		color: #393939;
+		padding-top: 40px; 
+		font-size: 30px;
+		text-align: center;
+	}
+	
+}
+
+.container {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.column{
+	width: 40%;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 2%;
+	position: relative;
+}
+
+#right{
+	color: #888888;
+	font-size: 12px;
+	float: right;
+	text-align: right;
+	position:absolute;
+}
+
+#left{
+	color: #393939;
+}
+
+.header-line{
+	margin-top: 15px;
+	border: 1px solid #EDEDED;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#current-plan {
+	font-size: 20px;
+}
+
+.a {
+	border-bottom: 1px dotted #888888;
+   text-decoration: none;
+}
+
+#members-num {
+	color: #FF0066;
+	
+}
+.h2 {
+	color: #393939;
+	padding-top: 40px; 
+	font-size: 25px;
+	text-align: center;
+	
+}
+
+.plan-type {
+	
+}
+
+.days-left {
+	
+}
