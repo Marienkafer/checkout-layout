@@ -26,9 +26,31 @@ body {
 	
 	h1{
 		color: #393939;
-		padding-top: 40px; 
+		padding-top: 30px; 
 		font-size: 30px;
 		text-align: center;
+	}
+	
+	h2{
+		color: #393939;
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	h3{
+		color: #393939;
+		font-size: 31px;
+		text-align: center;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	
+	h4{
+		color: #393939;
+		font-size: 16px;
+		text-align: center;
+		margin-bottom: 10px;
+		margin-top: 20px;
 	}
 	
 }
@@ -36,6 +58,7 @@ body {
 .container {
 	margin-left: 10%;
 	margin-right: 10%;
+	margin-bottom: 100px;
 }
 
 .column{
@@ -43,7 +66,9 @@ body {
 	font-size: 15px;
 	display: inline-block;
 	margin-top: 2%;
+	margin-bottom: 2%;
 	position: relative;
+	
 }
 
 #right{
@@ -51,20 +76,32 @@ body {
 	font-size: 12px;
 	float: right;
 	text-align: right;
-	position:absolute;
 }
 
 #left{
 	color: #393939;
+	float: block;
 }
 
 .header-line{
-	margin-top: 15px;
 	border: 1px solid #EDEDED;
-	width: 80%;
+	background-color: #EDEDED;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.plan-line{
+	border: 0.5px solid #B7B7B7;
+	width: 20%;
+	float: block;
+	background-color: #B7B7B7;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
 
 #current-plan {
 	font-size: 20px;
@@ -79,18 +116,105 @@ body {
 	color: #FF0066;
 	
 }
-.h2 {
-	color: #393939;
-	padding-top: 40px; 
-	font-size: 25px;
+
+#plan-container {
+	margin-top: 10px;
+	height: 250px;
+	width: 300px;
+	border: 1.5px solid #393939;
+	font-size: 14px;
+	align-content: center;
 	text-align: center;
-	
 }
 
-.plan-type {
-	
+#bestplan-container {
+	margin-top: 10px;
+	height: 350px;
+	width: 320px;
+	color: #EDEDED;
+	cursos: pointer;
+	font-size: 14px;
+	border: 1.5px solid #393939;
+	background: #393939;
+	align-content: center;
+	text-align: center;
 }
 
-.days-left {
-	
+
+#enhance-font{
+	font-size: 25px;
+	font-weight: bold;
 }
+
+#classic-bttn{
+	background-color: #393939;
+	color: white;
+	border: none;
+	
+	border: 2px solid  #393939;
+	border-radius: 6px;
+	text-align: center;
+	margin: 4px 2px;
+	padding: 3px 15px;
+}
+
+#pink-bttn{
+	background-color: #FF0066;
+	color: #F4F4F4;
+	border: 2px solid  #FF0066;
+	border-radius: 6px;
+	text-align: center;
+	margin: 4px 2px;
+	margin-top: 15px;
+	padding: 3px 15px;
+	margin-bottom: 20px;
+}
+
+.border-table {
+	border-left: 0.5px solid #B7B7B7;
+   height: 500px;
+}
+#plain-bttn{
+	border: 1.5px solid #393939;
+	background-color: transparent;
+	background-repeat:no-repeat;
+	border-radius: 6px;
+	text-align: center;
+	margin: 4px 2px;
+	margin-top: 20px;
+	padding: 3px 37px;
+}
+
+#service-description{
+	color: #393939;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 280px;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 15px;
+	//border-right: 0.5px solid #B7B7B7;
+}
+
+
+#description-client{
+	color: #888888;
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+#client-option{
+	color:  #FF0066;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+#plan-options{
+	color: #393939;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+

@@ -23,41 +23,65 @@ body {
   background-color: white; }
   .main-block h1 {
     color: #393939;
-    padding-top: 40px;
+    padding-top: 30px;
     font-size: 30px;
     text-align: center; }
+  .main-block h2 {
+    color: #393939;
+    font-size: 20px;
+    text-align: center; }
+  .main-block h3 {
+    color: #393939;
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px; }
+  .main-block h4 {
+    color: #393939;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px; }
 
 .container {
   margin-left: 10%;
-  margin-right: 10%; }
+  margin-right: 10%;
+  margin-bottom: 100px; }
 
 .column {
   width: 40%;
   font-size: 15px;
   display: inline-block;
   margin-top: 2%;
+  margin-bottom: 2%;
   position: relative; }
 
 #right {
   color: #888888;
   font-size: 12px;
   float: right;
-  text-align: right;
-  position: absolute; }
+  text-align: right; }
 
 #left {
-  color: #393939; }
+  color: #393939;
+  float: block; }
 
 .header-line {
-  margin-top: 15px;
-<<<<<<< HEAD
-	margin-bottom: 20px;
-=======
->>>>>>> 7493da0... html fixed and first style construction adding fonts
   border: 1px solid #EDEDED;
-  width: 80%;
+  background-color: #EDEDED;
+  width: 100%;
   margin-left: auto;
   margin-right: auto; }
+
+.plan-line {
+  border: 0.5px solid #B7B7B7;
+  width: 20%;
+  float: block;
+  background-color: #B7B7B7;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 15px; }
 
 #current-plan {
   font-size: 20px; }
@@ -69,8 +93,91 @@ body {
 #members-num {
   color: #FF0066; }
 
-.h2 {
-  color: #393939;
-  padding-top: 40px;
-  font-size: 25px;
+#plan-container {
+  margin-top: 10px;
+  height: 250px;
+  width: 300px;
+  border: 1.5px solid #393939;
+  font-size: 14px;
+  -ms-flex-line-pack: center;
+  align-content: center;
   text-align: center; }
+
+#bestplan-container {
+  margin-top: 10px;
+  height: 350px;
+  width: 320px;
+  color: #EDEDED;
+  cursos: pointer;
+  font-size: 14px;
+  border: 1.5px solid #393939;
+  background: #393939;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center; }
+
+#enhance-font {
+  font-size: 25px;
+  font-weight: bold; }
+
+#classic-bttn {
+  background-color: #393939;
+  color: white;
+  border: none;
+  border: 2px solid  #393939;
+  border-radius: 6px;
+  text-align: center;
+  margin: 4px 2px;
+  padding: 3px 15px; }
+
+#pink-bttn {
+  background-color: #FF0066;
+  color: #F4F4F4;
+  border: 2px solid  #FF0066;
+  border-radius: 6px;
+  text-align: center;
+  margin: 4px 2px;
+  margin-top: 15px;
+  padding: 3px 15px;
+  margin-bottom: 20px; }
+
+.border-table {
+  border-left: 0.5px solid #B7B7B7;
+  height: 500px; }
+
+#plain-bttn {
+  border: 1.5px solid #393939;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  text-align: center;
+  margin: 4px 2px;
+  margin-top: 20px;
+  padding: 3px 37px; }
+
+#service-description {
+  color: #393939;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 280px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px; }
+
+#description-client {
+  color: #888888;
+  font-size: 12px;
+  margin-top: 15px; }
+
+#client-option {
+  color: #FF0066;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 40px; }
+
+#plan-options {
+  color: #393939;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px; }
