@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html  lang=en>
  <head>
-  <meta charset= "UTF-8">
-  <title>Checkout</title>
-  <link rel="icon" href="/icons/M_logo.png"/>
-	 <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+  <meta charset="utf-8"/>
+	 <title>Checkout</title>
+	 <link rel="icon" href="icons/M_logo.png"/>
+	 <link type="text/css" rel="stylesheet" href="css/style.css"/>
  </head>
     
  <body>
   <div>
-   <img width= "178" height="auto" class="desktop-logo" src="/icons/mural_logo.svg"/>
+   <img width= "178" height="auto" class="desktop-logo" src="icons/mural_logo.svg"/>
   </div>
   <div class="main-block">
    <h1> READY TO TAKE THE NEXT STEP?</h1> 
@@ -25,46 +25,47 @@
 			 <br>
 			 Want to <a>manage your team members?</a>	
 			</div>
+		  <div class="header-line"> </div>
 		</div>
-	  <div class="container">
-		<div class="header-line"> </div>
+	  <div class="title-block">
+		
 		<h2>Choose a plan that works best for your needs and your team size. <br>And leave some room to grow!</h2>
 	  </div>
-	  <div class="columns" >
-		  <div id="plan-container">
-				<h3>Startup</h3>
+	  <div class="plans" >
+		  <div class ="plan-container" id="startup-plan">
+				<div id="plan-title">Startup</div>
 				<div class="plan-line"> </div>
 				<span id="enhance-font"> 5 </span> <br/> users
 				<div class="plan-line"> </div>
 				<p>
-					<input type="radio" name="month"/> <span id="enhance-font">$29</span>  / month <br/>
-					<input type="radio" name="year"/> <span id="enhance-font"> $300 </span> / year
+					<input class="radiobutton" type="radio" name="month"/> <span id="enhance-font">$29</span>  / month <br/>
+					<input class="radiobutton" type="radio"  name="year"/> <span id="enhance-font"> $300 </span> / year
 				</p>
-		  		<button id="classic-bttn"> CHOOSE THIS PLAN </button>
+		  		<button class="bttn"> CHOOSE THIS PLAN </button>
 			</div>
-		  <div id="bestplan-container">
-			  <h3>Business</h3>
+		  <div class="plan-container" id="bestplan-container">
+			  <div id="plan-title">Business</div>
 			  <div class="plan-line"> </div>
 			  <span id="enhance-font"> 5 </span> <br/> users
 			  <p>					 
 				  <input type="range" min="5" max="30" value="5">
 				</p>
 				<span id="enhance-font"> $600 </span>/ year <br/>
-		  		<button id="pink-bttn"> CHOOSE THIS PLAN </button>
+		  		<button class="bttn" id="pink-bttn"> CHOOSE THIS PLAN </button>
 		  </div>
-		  <div id="plan-container">
-					 <h3>Enterprise </h3>
+		  <div class="plan-container" id="enterprise-plan">
+					 <div id="plan-title">Enterprise </div>
 					 <div class="plan-line"> </div>
 					 <span id="enhance-font"> 30+</span> <br/> users 
 					 <div class="plan-line"> </div>
 					 <br/>
-					 <button id="plain-bttn">  LEARN MORE </button>
+					 <button class="bttn" id="plain-bttn">  LEARN MORE </button>
 					 <br/>
-					 <button id="classic-bttn">  CHOOSE THIS PLAN</button>
+					 <button class="bttn">  CHOOSE THIS PLAN</button>
 		  </div>
 	  </div> 
-	  <div class="container">
-			<h4>Questions? <a> Send us an email</a> or give us a call at <span><b>+1 (415) 800 3524 </b></span></h4>
+	  <div class="title-block">
+			<h4>Questions? <b> Send us an email</b> or give us a call at <b>+1 (415) 800 3524 </b></h4>
 	 </div>
 	  		<div class="table-plans">
 			<div id="service-description"> CHOOSE THIS PLAN IF YOU'RE A...
@@ -102,8 +103,8 @@
 				<div id="plan-options"> - </div>
 			</div>
 			<div id="service-description"> CHOOSE THIS PLAN IF YOU'RE A...
-				<div id="description-client"> Leading design team within a big company </div>
-				<div id="description-client">  Distributed business in which visual <br/> collaboration is key to success </div>
+				<div id="description-client"> Business that successfully integrated MURAL<br/> and is ready to deploy at scale</div>
+				<div id="description-client"> Design-led Fortune 1000 Company </div>
 				<div class="plan-line"></div>
 				<div id="client-option"> ENTERPRISE INCLUDES: </div>
 				<div id="plan-options">Unlimited Rooms</div>
