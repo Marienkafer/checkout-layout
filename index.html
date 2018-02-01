@@ -37,22 +37,19 @@
 				<div class="plan-line"> </div>
 				<span id="enhance-font"> 5 </span> <br/> users
 				<div class="plan-line"> </div>
-				<p>
-					<input class="radiobutton" type="radio" name="month"/> <span id="enhance-font">$29</span>  / month <br/>
-					<input class="radiobutton" type="radio"  name="year"/> <span id="enhance-font"> $300 </span> / year
+				<p id="select-price">
+					<input class="radiobutton" type="radio" name="month"/> <span id="enhance-font" value="$29">$29</span>  / month <br/>
+					<input class="radiobutton" type="radio"  name="year"/> <span id="enhance-font" value"$300"> $300 </span> / year
 				</p>
 		  		<button class="bttn"> CHOOSE THIS PLAN </button>
 			</div>
 		  <div class="plan-container" id="bestplan-container">
 			  <div id="plan-title">Business</div>
 			  <div class="plan-line"> </div>
-			  <span id="enhance-font"> 
-				  <output name="clientOutput" id="clientOutputId">5</output></span> <br/> users
+			  <span id="enhance-font"> 5 </span> <br/> users
 			  <p>
-    
-	 <input type="range" name="clientInput" id="clientInputId" value="5" min="5" max="100" oninput="clientOutputId.value = clientInputId.value">
-    
-				</p>
+				  <input type="range" name="clientInput" id="clientInputId" value="5" min="5" max="100">
+			  </p>
 				<span id="enhance-font"> $600 </span>/ year <br/>
 		  		<button class="bttn" id="pink-bttn"> CHOOSE THIS PLAN </button>
 		  </div>
