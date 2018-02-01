@@ -22,7 +22,9 @@ body {
 	box-sizing: border-box;
 	margin-left: 10%;
 	margin-right: 10%;
+	margin-bottom: 100px;
 	background-color: white;
+	overflow: hidden;
 	
 	h1{
 		color: #393939;
@@ -58,7 +60,7 @@ body {
 .container {
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 }
 
 .column{
@@ -67,10 +69,16 @@ body {
 	display: inline-block;
 	margin-top: 2%;
 	margin-bottom: 2%;
-	position: relative;
-	
+	float: left;
 }
 
+.columns{
+	position: relative;
+}
+
+.table-plans{
+	position: relative;
+}
 #right{
 	color: #888888;
 	font-size: 12px;
@@ -117,26 +125,30 @@ body {
 	
 }
 
-#plan-container {
-	margin-top: 10px;
-	height: 250px;
-	width: 300px;
+#plan-container {	
+
+	margin-top: 22px;
+	height: 280px;
+	width: 270px;
+	float: left;
 	border: 1.5px solid #393939;
 	font-size: 14px;
 	align-content: center;
 	text-align: center;
+	overflow: hidden;
 }
 
+
+
 #bestplan-container {
-	margin-top: 10px;
-	height: 350px;
-	width: 320px;
+	margin-top: 12px;
+	float:left;
+	height: 300px;
+	width: 300px;
 	color: #EDEDED;
-	cursos: pointer;
 	font-size: 14px;
-	border: 1.5px solid #393939;
+	border: 5px solid #393939;
 	background: #393939;
-	align-content: center;
 	text-align: center;
 }
 
@@ -187,13 +199,11 @@ body {
 
 #service-description{
 	color: #393939;
-	margin-left: 30%;
-	margin-right: 30%;
 	width: 280px;
 	font-size: 12px;
 	text-align: center;
+	float: left;
 	margin-top: 15px;
-	//border-right: 0.5px solid #B7B7B7;
 }
 
 
