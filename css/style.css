@@ -106,7 +106,9 @@ body {
   margin-left: 20%;
   margin-right: 20%;
   text-align: left;
-  list-style: none; }
+  list-style: none;
+  font-weight: bold;
+  font-size: 22px; }
 
 .header-line {
   border: 1px solid #EDEDED;
@@ -124,6 +126,10 @@ body {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 15px; }
+
+#plantype {
+  font-weight: normal;
+  font-size: 14px; }
 
 #current-plan {
   font-size: 20px; }

@@ -5,21 +5,7 @@
 	 <title>Checkout</title>
 	 <link rel="icon" href="icons/M_logo.png"/>
 	 <link type="text/css" rel="stylesheet" href="css/style.css"/>
-	 <script>
-		 function updateValue(value){
-			 var slider = document.getElementById("clientInput");
-			 var clientNumber = document.getElementById("number-client");
-			 var clientPricePlan = document.getElementById("client-price");
-	
-			 clientNumber.innerHTML = slider.value;
-			 
-			 slider.oninput = function() {
-				 clientNumber.innerHTML = this.value;
-				 clientPricePlan.innerHTML = "$"+clientNumber.innerHTML*120;
-			 }		
-			 
-		 }
-	 </script>
+	 <script src="js/inputBehaviour.js"></script>
  </head>
     
  <body>
@@ -53,11 +39,15 @@
 				<div class="plan-line"> </div>
 				<span id="enhance-font"> 5 </span> <br/> users
 				<div class="plan-line"> </div>
-				<p id="select-price">
-					<input class="radiobutton" type="checkbox" id="monthPlan" name="month" > <label id="up-price"> 29 / month </label> <br/>
-					<input class="radiobutton" id="yearPlan" type="checkbox"  name="year"/> <label id="down-price">300 /year </label> 
-				</p>
-		  		<button class="bttn"> CHOOSE THIS PLAN </button>
+				<ul onclick="switchvalue()" id="select-price">
+					<li id="cmdSwitch29"> 
+						<input type=radio id="29"> $29 <span id="plantype"> / month </span> 
+					</li>
+					<li id="cmdSwitch300">
+						<input type=radio id="300"> $300 <span id="plantype"> / year </span> 
+					</li>
+			  </ul>
+			  <button class="bttn"> CHOOSE THIS PLAN </button>
 			</div>
 		  <div class="plan-container" id="bestplan-container">
 			  <div id="plan-title">Business</div>
