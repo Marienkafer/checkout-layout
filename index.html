@@ -5,9 +5,25 @@
 	 <title>Checkout</title>
 	 <link rel="icon" href="icons/M_logo.png"/>
 	 <link type="text/css" rel="stylesheet" href="css/style.css"/>
+	 <script>
+		 function updateValue(value){
+			 var slider = document.getElementById("clientInput");
+			 var clientNumber = document.getElementById("number-client");
+			 var clientPricePlan = document.getElementById("client-price");
+	
+			 clientNumber.innerHTML = slider.value;
+			 
+			 slider.oninput = function() {
+				 clientNumber.innerHTML = this.value;
+				 clientPricePlan.innerHTML = "$"+clientNumber.innerHTML*120;
+			 }		
+			 
+		 }
+	 </script>
  </head>
     
  <body>
+	 
   <div>
    <img width= "178" height="auto" class="desktop-logo" src="icons/mural_logo.svg"/>
   </div>
@@ -38,19 +54,20 @@
 				<span id="enhance-font"> 5 </span> <br/> users
 				<div class="plan-line"> </div>
 				<p id="select-price">
-					<input class="radiobutton" type="radio" name="month"/> <span id="enhance-font" value="$29">$29</span>  / month <br/>
-					<input class="radiobutton" type="radio"  name="year"/> <span id="enhance-font" value"$300"> $300 </span> / year
+					<input class="radiobutton" type="checkbox" id="monthPlan" name="month" > <label id="up-price"> 29 / month </label> <br/>
+					<input class="radiobutton" id="yearPlan" type="checkbox"  name="year"/> <label id="down-price">300 /year </label> 
 				</p>
 		  		<button class="bttn"> CHOOSE THIS PLAN </button>
 			</div>
 		  <div class="plan-container" id="bestplan-container">
 			  <div id="plan-title">Business</div>
 			  <div class="plan-line"> </div>
-			  <span id="enhance-font"> 5 </span> <br/> users
+			  <span id="number-client">  5 </span> <br/> users
 			  <p>
-				  <input type="range" name="clientInput" id="clientInputId" value="5" min="5" max="100">
+				  <input type="range" id="clientInput" value="5" min="5" max="50" onchange="updateValue(this.value)">
 			  </p>
-				<span id="enhance-font"> $600 </span>/ year <br/>
+			  
+				<span id="client-price"> $600 </span> / year <br/>
 		  		<button class="bttn" id="pink-bttn"> CHOOSE THIS PLAN </button>
 		  </div>
 		  <div class="plan-container" id="enterprise-plan">

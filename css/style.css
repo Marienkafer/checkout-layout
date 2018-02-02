@@ -105,7 +105,8 @@ body {
 #select-price {
   margin-left: 20%;
   margin-right: 20%;
-  text-align: left; }
+  text-align: left;
+  list-style: none; }
 
 .header-line {
   border: 1px solid #EDEDED;
@@ -158,12 +159,22 @@ body {
   font-family: 'Proxima Nova Semibold';
   font-weight: normal; }
 
+#number-client {
+  font-size: 25px;
+  font-family: 'Proxima Nova Semibold';
+  font-weight: normal; }
+
+#client-price {
+  font-size: 25px;
+  font-family: 'Proxima Nova Semibold';
+  font-weight: normal; }
+
 #plan-title {
   font-family: 'Proxima Nova Semibold';
   font-weight: normal;
   font-size: 30px;
   font-size: 31px;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center; }
 
 .bttn {
@@ -212,7 +223,7 @@ body {
   margin-top: 15px;
   margin-bottom: 20px; }
 
-#client-option {
+.label {
   color: #FF0066;
   font-size: 16px;
   font-weight: bold;
