@@ -24,8 +24,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 15px;
-  margin-bottom: 25px; }
+  padding-top: 1em;
+  margin-bottom: 2em; }
 
 body {
   background-color: #F4F4F4;
@@ -36,43 +36,41 @@ body {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
-  width: 80%;
-  min-width: 888px;
+  margin-bottom: 5em;
+  width: 90%;
   background-color: white;
   overflow: hidden; }
   .main-block h1 {
     font-family: 'Proxima Nova Light';
     font-weight: normal;
     color: #393939;
-    padding-top: 30px;
-    font-size: 25px;
+    padding-top: 0.5em;
+    font-size: 2em;
     text-align: center; }
   .main-block h2 {
     font-weight: normal;
     color: #393939;
-    font-size: 20px;
+    font-size: 2em;
     text-align: center; }
   .main-block h4 {
     font-family: 'Proxima Nova Semibold';
     font-weight: normal;
     color: #393939;
-    font-size: 18px;
+    font-size: 1em;
     text-align: center; }
 
 .container {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 10px;
+  margin-bottom: 10%;
+  width: 100%;
   display: block;
   line-height: 1.4; }
 
 .title-block {
-  margin-top: 20px; }
+  margin-top: 20em; }
 
 .column {
-  width: 40%;
-  font-size: 15px;
+  width: 50%;
+  font-size: 1.5em;
   display: inline-block;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -80,9 +78,10 @@ body {
 
 #right {
   color: #888888;
-  font-size: 14px;
+  font-size: 1.5em;
   margin-top: 5%;
-  margin-bottom: 10px;
+  width: 50%;
+  margin-bottom: 1em;
   float: right;
   text-align: right;
   display: block; }
@@ -96,138 +95,141 @@ body {
   text-align: left;
   list-style: none;
   font-weight: bold;
-  font-size: 22px; }
+  font-size: 2em; }
 
 .header-line {
   border: 1px solid #EDEDED;
   background-color: #EDEDED;
-  width: 100%;
   clear: both;
   margin-left: auto;
   margin-right: auto; }
 
 .plan-line {
-  border: 0.5px solid lightgrey;
-  width: 100px;
+  border: 0.5em solid lightgrey;
+  width: 100em;
   background-color: lightgrey;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 15px; }
+  margin-top: 10em;
+  margin-bottom: 15em; }
 
 #plan-type {
   font-weight: normal;
-  font-size: 14px; }
+  font-size: 2em; }
 
 #current-plan {
-  font-size: 20px; }
+  font-size: 2em; }
 
 #members-num {
   color: #FF0066; }
 
 .plans {
   display: table;
-  min-width: 862px;
   position: relative;
-  margin: 0 auto;
-  width: 75%; }
+  margin: 0 auto; }
+  @media (max-width: 375em) {
+    .plans {
+      width: 20%; } }
 
 .plan-container {
-  width: 32%;
-  height: 280px;
-  margin-top: 40px;
+  height: 280em;
+  margin-top: 40em;
   color: #393939;
-  border: 2px solid #393939;
+  border: 2em solid #393939;
   text-align: center;
   float: left; }
+  @media (max-width: 375em) {
+    .plan-container {
+      width: 50%; } }
 
 #bestplan-container {
-  width: 34.5%;
-  height: 300px;
-  margin-top: 30px;
+  height: 300em;
+  margin-top: 30em;
   border: none;
   color: #EDEDED;
-  font-size: 14px;
+  font-size: 1em;
   background: #393939;
   text-align: center; }
 
 .slider {
-  height: 25px;
+  height: 25em;
   border-radius: 50%;
   cursor: pointer; }
 
 .number-client {
-  font-size: 25px;
+  font-size: 2em;
   font-family: 'Proxima Nova Semibold';
   font-weight: normal; }
 
 #client-price {
-  font-size: 25px;
+  font-size: 2em;
   font-family: 'Proxima Nova Semibold';
   font-weight: normal; }
 
 #plan-title {
   font-family: 'Proxima Nova Semibold';
   font-weight: normal;
-  font-size: 30px;
-  font-size: 31px;
-  margin-top: 30px;
+  font-size: 2em;
+  font-size: 2em;
+  margin-top: 30em;
   text-align: center; }
 
 .bttn {
   font-family: 'Proxima Nova';
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1em;
   background-color: #393939;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 6em;
   text-align: center;
-  margin: 4px 2px;
-  padding: 5px 15px; }
+  margin: 4em 2em;
+  padding: 5em 15em; }
 
 #pink-bttn {
   background-color: #FF0066;
   color: #F4F4F4;
-  margin-top: 25px;
-  margin-bottom: 20px; }
+  margin-top: 25em;
+  margin-bottom: 20em; }
 
 #plain-bttn {
-  border: 1.5px solid #393939;
+  border: 1.5em solid #393939;
   background-color: transparent;
   background-repeat: no-repeat;
   color: #393939;
-  border-radius: 6px;
+  border-radius: 6em;
   text-align: center;
-  margin-top: 20px;
-  padding: 5px 45px; }
+  margin-top: 20em;
+  padding: 5em 45em; }
 
 .table-plans {
   display: table;
-  min-width: 765px;
   margin: 0 auto;
   position: relative;
-  width: 75%;
   margin-bottom: 5%; }
+  @media (max-width: 375em) {
+    .table-plans {
+      width: 50%; } }
 
 #service-description {
   color: #393939;
-  width: 32%;
-  min-width: 251px;
-  font-size: 12px;
+  font-size: 1em;
   text-align: center;
   float: left;
-  margin-top: 15px; }
+  margin-top: 1em; }
+  @media (max-width: 375em) {
+    #service-description {
+      width: 50%; } }
 
 #description-client {
   color: #888888;
-  font-size: 12px;
-  margin-top: 15px;
-  margin-bottom: 20px; }
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em; }
 
 #plan-options {
   color: #393939;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
-  margin-bottom: 20px;
-  margin-top: 20px; }
+  margin-bottom: 2em;
+  margin-top: 2em; }
