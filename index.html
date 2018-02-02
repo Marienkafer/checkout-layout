@@ -9,42 +9,43 @@
  </head>
     
  <body>
+	 <div>
+		 <img width= "178" height="auto" class="desktop-logo" src="icons/mural_logo.svg"/>
+	 </div>
 	 
-  <div>
-   <img width= "178" height="auto" class="desktop-logo" src="icons/mural_logo.svg"/>
-  </div>
-  <div class="main-block">
-   <h1> READY TO TAKE THE NEXT STEP?</h1> 
-	  <div class="container">
-		  <div class="header-line"> </div>
-		  <div class="column" id="left">
-			  CURRENT PLAN: <br>
+	 <div class="main-block">
+		 <h1> READY TO TAKE THE NEXT STEP?</h1> 
+		 <div class="container">
+			 <div class="header-line"> </div>
+			 <div class="column" id="left">
+				 CURRENT PLAN: <br>
 			  <div id="current-plan">FREE 30 Day trial </div>
-			  You have: <b> 13 Days left </b>
-			</div>
-			<div class= "column" id="right"> 
-			 Your currently contains <span id="members-num">12 members</span> 
-			 <br>
-			 Want to <a>manage your team members?</a>	
-			</div>
-		  <div class="header-line"> </div>
+				 You have: <b> 13 Days left </b>
+			 </div>
+			 <div class= "column" id="right"> 
+				 Your currently contains <span id="members-num">12 members</span> 
+				 <br>
+				 Want to <a>manage your team members?</a>	
+			 </div>
+			 <div class="header-line"> </div>
 		</div>
 	  <div class="title-block">
-		
-		<h2>Choose a plan that works best for your needs and your team size. <br>And leave some room to grow!</h2>
+		  
+		  <h2>Choose a plan that works best for your needs and your team size. <br>And leave some room to grow!</h2>
 	  </div>
-	  <div class="plans" >
+	  
+		 <div class="plans" >
 		  <div class ="plan-container" id="startup-plan">
 				<div id="plan-title">Startup</div>
 				<div class="plan-line"> </div>
-				<span id="enhance-font"> 5 </span> <br/> users
+				<span class="number-client"> 5 </span> <br/> users
 				<div class="plan-line"> </div>
 				<ul onclick="switchvalue()" id="select-price">
 					<li id="cmdSwitch29"> 
-						<input type=radio id="29"> $29 <span id="plantype"> / month </span> 
+						<input type=radio id="29"> $29 <span id="plan-type"> / month </span> 
 					</li>
 					<li id="cmdSwitch300">
-						<input type=radio id="300"> $300 <span id="plantype"> / year </span> 
+						<input type=radio id="300"> $300 <span id="plan-type"> / year </span> 
 					</li>
 			  </ul>
 			  <button class="bttn"> CHOOSE THIS PLAN </button>
@@ -52,9 +53,9 @@
 		  <div class="plan-container" id="bestplan-container">
 			  <div id="plan-title">Business</div>
 			  <div class="plan-line"> </div>
-			  <span id="number-client">  5 </span> <br/> users
+			  <span class="number-client" id="sliderNumber">  5 </span> <br/> users
 			  <p>
-				  <input type="range" id="clientInput" value="5" min="5" max="50" onchange="updateValue(this.value)">
+				  <input type="range" class="slider"id="clientInput" value="5" min="5" max="50" onchange="updateValue(this.value)">
 			  </p>
 			  
 				<span id="client-price"> $600 </span> / year <br/>
@@ -63,7 +64,7 @@
 		  <div class="plan-container" id="enterprise-plan">
 					 <div id="plan-title">Enterprise </div>
 					 <div class="plan-line"> </div>
-					 <span id="enhance-font"> 30+</span> <br/> users 
+					 <span class="number-client"> 30+</span> <br/> users 
 					 <div class="plan-line"> </div>
 					 <br/>
 					 <button class="bttn" id="plain-bttn">  LEARN MORE </button>

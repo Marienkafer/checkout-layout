@@ -1,6 +1,6 @@
 function updateValue(value) {
 	var slider = document.getElementById("clientInput");
-	var clientNumber = document.getElementById("number-client");
+	var clientNumber = document.getElementById("sliderNumber");
 	var clientPricePlan = document.getElementById("client-price");
 	clientNumber.innerHTML = slider.value;
 	slider.oninput = function() {
